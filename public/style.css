@@ -1,0 +1,310 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5ddd5; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #075e54; /* WhatsApp green color */
+    margin: 20px 0;
+}
+
+.main {
+    max-width: 500px; /* Slightly narrower */
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for messages */
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #e6e6e6; /* Slightly thicker bottom border */
+}
+
+.name span {
+    margin-right: 10px;
+    color: #075e54; /* User icon color */
+}
+
+.name input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px; /* Rounded input */
+    outline: none; /* Remove outline */
+    transition: border 0.3s;
+}
+
+.name input:focus {
+    border: 1px solid #075e54; /* Focus border color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    border-bottom: 2px solid #e6e6e6;
+    background-color: #f7f7f7; /* Light background for messages */
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 20px; /* More rounded message bubbles */
+    max-width: 80%;
+    clear: both;
+    font-size: 14px; /* Slightly smaller text */
+}
+
+.receiver {
+    background-color: #e0f7fa; /* Light blue for receiver */
+    margin-right: auto; /* Align to the left */
+    border-radius: 20px; /* Rounded corners */
+    padding: 0px 12px; /* Reduced padding */
+    max-width: 80%; /* Limit width of message */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* For positioning of potential pseudo-elements */
+    line-height: 1.2; /* Adjust line height for compactness */
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+}
+
+.sender {
+    background-color: #007bff; /* Blue for sender */
+    color: white; /* Text color */
+    margin-left: auto; /* Align to the right */
+    border-radius: 20px; /* Rounded corners */
+    padding: 0px 12px; /* Reduced padding */
+    max-width: 80%; /* Limit width of message */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* For positioning of potential pseudo-elements */
+    line-height: 1.2; /* Adjust line height for compactness */
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+}
+
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    padding: 15px;
+    border-top: 2px solid #e6e6e6; /* Thicker border */
+    background-color: #ffffff; /* White background for form */
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px; /* Rounded input */
+    margin-right: 10px;
+    outline: none;
+    transition: border 0.3s;body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e5ddd5; /* Light background color */
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #075e54; /* WhatsApp green color */
+        margin: 20px 0;
+    }
+    
+    .main {
+        max-width: 500px; /* Slightly narrower */
+        margin: 20px auto;
+        background-color: #ffffff; /* White background for messages */
+        border-radius: 16px; /* More rounded corners */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .name {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 2px solid #e6e6e6; /* Slightly thicker bottom border */
+    }
+    
+    .name span {
+        margin-right: 10px;
+        color: #075e54; /* User icon color */
+    }
+    
+    .name input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #e6e6e6;
+        border-radius: 20px; /* Rounded input */
+        outline: none; /* Remove outline */
+        transition: border 0.3s;
+    }
+    
+    .name input:focus {
+        border: 1px solid #075e54; /* Focus border color */
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 15px;
+        margin: 0;
+        max-height: 300px; /* Decreased height for message container */
+        overflow-y: auto;
+        border-bottom: 2px solid #e6e6e6;
+        background-color: #f7f7f7; /* Light background for messages */
+    }
+    
+    li {
+        margin-bottom: 10px; /* Reduced margin */
+        padding: 10px 15px; /* Reduced padding */
+        border-radius: 20px; /* More rounded message bubbles */
+        max-width: 80%;
+        clear: both;
+        font-size: 14px; /* Slightly smaller text */
+        position: relative; /* For potential pseudo-elements */
+    }
+    
+    .receiver {
+        background-color: #e0f7fa; /* Light blue for receiver */
+        margin-right: auto; /* Align to the left */
+    }
+    
+    .sender {
+        background-color: #007bff; /* Blue for sender */
+        color: white;
+        margin-left: auto; /* Align to the right */
+    }
+    
+    .message-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form {
+        display: flex;
+        padding: 15px;
+        border-top: 2px solid #e6e6e6; /* Thicker border */
+        background-color: #ffffff; /* White background for form */
+    }
+    
+    form input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #e6e6e6;
+        border-radius: 20px; /* Rounded input */
+        margin-right: 10px;
+        outline: none;
+        transition: border 0.3s;
+    }
+    
+    form input[type="text"]:focus {
+        border: 1px solid #007bff; /* Change border on focus */
+    }
+    
+    form button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px; /* Rounded button */
+        background-color: #075e54; /* WhatsApp green */
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #007bff; /* Change button color on hover */
+    }
+    
+    #feedback {
+        text-align: center;
+        color: #999; /* Feedback text color */
+        margin: 10px 0;
+        font-style: italic; /* Italic style for feedback */
+    }
+    
+    #clientsTotal {
+        text-align: center; /* Center the total clients text */
+        color: #333; /* Darker text color */
+        font-weight: bold; /* Make it bold */
+        margin: 10px 0; /* Margin for spacing */
+    }
+    
+}
+
+form input[type="text"]:focus {
+    border: 1px solid #007bff; /* Change border on focus */
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    background-color: #075e54; /* WhatsApp green */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #007bff; /* Change button color on hover */
+}
+
+#feedback {
+    text-align: center;
+    color: #999; /* Feedback text color */
+    margin: 10px 0;
+    font-style: italic; /* Italic style for feedback */
+}
+
+#msg-container {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    max-height: 70vh; /* Set maximum height to 70% of the viewport height */
+    height: 100%; /* Full height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px; /* Space below the message container */
+}
+
+
+.message-content {
+    max-width: 80%; /* Limit the width of message bubbles */
+    border-radius: 20px; /* Rounded corners for messages */
+    padding: 5px 10px; /* Padding inside message bubbles */
+    line-height: 1.2; /* Line height for message text */
+    margin-bottom: 10px; /* Space between messages */
+}
+
+.receiver {
+    background-color: #e0f7fa; /* Light blue for receiver */
+    margin-right: auto; /* Align to the left */
+}
+
+.sender {
+    background-color: #007bff; /* Blue for sender */
+    color: white; /* Text color */
+    margin-left: auto; /* Align to the right */
+}
+
+#clientsTotal {
+    text-align: center; /* Center the total clients text */
+    font-size: 16px; /* Font size for total clients */
+    margin-bottom: 10px; /* Space below the total clients text */
+}
+
+#feedback {
+    font-style: italic; /* Italic style for typing feedback */
+    color: #888; /* Grey color for feedback text */
+    text-align: center; /* Center the feedback text */
+    margin-top: 10px; /* Space above feedback text */
+}
